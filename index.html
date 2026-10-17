@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Hoyeon Lee</title>
-<meta name="description" content="Hoyeon Lee's portfolio — Ascade, Wellome, Crcls, Omma's Kitchen, and usePaletta." />
+<meta name="description" content="Hoyeon Lee's portfolio — Cardboard Party, Ascade, Wellome, Crcls, Omma's Kitchen, and usePaletta." />
 <meta name="color-scheme" content="light" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,6 +28,7 @@
 
     --c-ascade:   #33477a;
     --c-omma:     #c1712f;
+    --c-cardboard:#a0703a;
     --c-wellome:  #8b6fc9;
     --c-crcls:    #c15f7f;
     --c-paletta1: #e0668a;
@@ -337,7 +338,13 @@
     transition: gap 0.2s ease;
   }
 
+  .tag-wip { background: rgba(212,140,58,0.14); color: #a8641a; border-color: rgba(212,140,58,0.35); }
+
   /* ── project-specific preview art ─────────────────── */
+  .preview-cardboard .preview-content { background: linear-gradient(155deg, #f6ead7, #ecd5b0); flex-direction: row; align-items: stretch; gap: 0.7rem; padding: 1.1rem 1rem; }
+  .cb-mode { flex: 1; border-radius: 14px; background: linear-gradient(160deg, #e4cda8, #d4b98f); border: 1px solid rgba(110,74,40,0.22); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.2rem; padding: 0.9rem 0.6rem; color: #6e4a28; }
+  .cb-mode small { font-size: 0.58rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.7; }
+  .cb-mode strong { font-family: var(--font-display); font-size: 1.05rem; font-weight: 600; }
   .preview-ascade .preview-content { background: linear-gradient(155deg, #eef1f8, #e2e7f3); }
   .ascade-row { display: flex; align-items: center; gap: 0.55rem; }
   .ascade-check {
@@ -457,12 +464,38 @@
 <section class="work" id="work">
   <div class="section-header">
     <p class="section-label">Selected projects</p>
-    <h2 class="section-title">Five projects.</h2>
+    <h2 class="section-title">Six projects.</h2>
   </div>
 
   <div class="cards">
 
-    <a class="card" data-index="01" href="https://ascade.co/gov" target="_blank" rel="noopener">
+    <a class="card" data-index="01" href="https://cardboard-beige.vercel.app" target="_blank" rel="noopener">
+      <div class="card-preview preview-cardboard">
+        <div class="preview-bar">
+          <span class="preview-dot"></span><span class="preview-dot"></span><span class="preview-dot"></span>
+          <span class="preview-url">cardboard-beige.vercel.app</span>
+          <span class="preview-arrow">&#8599;</span>
+        </div>
+        <div class="preview-content">
+          <div class="cb-mode"><small>Mode</small><strong>FPS</strong></div>
+          <div class="cb-mode"><small>Mode</small><strong>Kart racing</strong></div>
+        </div>
+      </div>
+      <div class="card-meta">
+        <span class="card-num">01</span>
+        <div class="swatch-key"><span style="background:var(--c-cardboard)"></span></div>
+        <div class="tags"><span class="tag tag-wip">Early alpha</span><span class="tag">Game</span></div>
+      </div>
+      <h3 class="card-title">Cardboard Party</h3>
+      <p class="card-tagline">An early alpha of a game in development.</p>
+      <p class="card-desc">
+        Two modes are being built: a chaotic but simple FPS and kart racing. It's a passion
+        project and still an early build, so some things are unfinished.
+      </p>
+      <span class="card-cta">Open cardboard-beige.vercel.app <span>&rarr;</span></span>
+    </a>
+
+    <a class="card" data-index="02" href="https://ascade.co/gov" target="_blank" rel="noopener">
       <div class="card-preview preview-ascade">
         <div class="preview-bar">
           <span class="preview-dot"></span><span class="preview-dot"></span><span class="preview-dot"></span>
@@ -477,7 +510,7 @@
         </div>
       </div>
       <div class="card-meta">
-        <span class="card-num">01</span>
+        <span class="card-num">02</span>
         <div class="swatch-key"><span style="background:var(--c-ascade)"></span></div>
         <div class="tags"><span class="tag">AI</span><span class="tag">Formal Verification</span><span class="tag">GovTech</span></div>
       </div>
@@ -490,7 +523,7 @@
       <span class="card-cta">Open ascade.co/gov <span>&rarr;</span></span>
     </a>
 
-    <a class="card" data-index="02" href="https://wellome.vercel.app/" target="_blank" rel="noopener">
+    <a class="card" data-index="03" href="https://wellome.vercel.app/" target="_blank" rel="noopener">
       <div class="card-preview preview-wellome">
         <div class="preview-bar">
           <span class="preview-dot"></span><span class="preview-dot"></span><span class="preview-dot"></span>
@@ -511,7 +544,7 @@
         </div>
       </div>
       <div class="card-meta">
-        <span class="card-num">02</span>
+        <span class="card-num">03</span>
         <div class="swatch-key"><span style="background:var(--c-wellome)"></span></div>
         <div class="tags"><span class="tag">Web App</span><span class="tag">Roommates</span></div>
       </div>
@@ -524,7 +557,7 @@
       <span class="card-cta">Open wellome.vercel.app <span>&rarr;</span></span>
     </a>
 
-    <a class="card" data-index="03" href="https://crcls.vercel.app/" target="_blank" rel="noopener">
+    <a class="card" data-index="04" href="https://crcls.vercel.app/" target="_blank" rel="noopener">
       <div class="card-preview preview-crcls">
         <div class="preview-bar">
           <span class="preview-dot"></span><span class="preview-dot"></span><span class="preview-dot"></span>
@@ -538,7 +571,7 @@
         </div>
       </div>
       <div class="card-meta">
-        <span class="card-num">03</span>
+        <span class="card-num">04</span>
         <div class="swatch-key"><span style="background:var(--c-crcls)"></span></div>
         <div class="tags"><span class="tag">Web App</span></div>
       </div>
@@ -551,7 +584,7 @@
       <span class="card-cta">Open crcls.vercel.app <span>&rarr;</span></span>
     </a>
 
-    <a class="card" data-index="04" href="https://ommaskitchen.vercel.app/" target="_blank" rel="noopener">
+    <a class="card" data-index="05" href="https://ommaskitchen.vercel.app/" target="_blank" rel="noopener">
       <div class="card-preview preview-omma">
         <div class="preview-bar">
           <span class="preview-dot"></span><span class="preview-dot"></span><span class="preview-dot"></span>
@@ -568,7 +601,7 @@
         </div>
       </div>
       <div class="card-meta">
-        <span class="card-num">04</span>
+        <span class="card-num">05</span>
         <div class="swatch-key"><span style="background:var(--c-omma)"></span></div>
         <div class="tags"><span class="tag">Web App</span><span class="tag">Demo</span></div>
       </div>
@@ -581,7 +614,7 @@
       <span class="card-cta">Open ommaskitchen.vercel.app <span>&rarr;</span></span>
     </a>
 
-    <a class="card" data-index="05" href="https://usepaletta.vercel.app/" target="_blank" rel="noopener">
+    <a class="card" data-index="06" href="https://usepaletta.vercel.app/" target="_blank" rel="noopener">
       <div class="card-preview preview-paletta">
         <div class="preview-bar">
           <span class="preview-dot"></span><span class="preview-dot"></span><span class="preview-dot"></span>
@@ -605,7 +638,7 @@
         </div>
       </div>
       <div class="card-meta">
-        <span class="card-num">05</span>
+        <span class="card-num">06</span>
         <div class="swatch-key">
           <span style="background:var(--c-paletta1)"></span>
           <span style="background:var(--c-paletta3)"></span>
@@ -633,11 +666,12 @@
       UVA with a background in UI/UX design, visual arts, and music.
     </p>
     <p class="about-body">
-      These five projects range from enterprise software to a personal weekend project. The
+      These six projects range from enterprise software to a game still in progress. The
       process is the same either way: design first, then build.
     </p>
   </div>
   <div class="about-palette">
+    <div class="ap-row"><span class="ap-dot" style="background:var(--c-cardboard)"></span>Cardboard Party</div>
     <div class="ap-row"><span class="ap-dot" style="background:var(--c-ascade)"></span>Ascade</div>
     <div class="ap-row"><span class="ap-dot" style="background:var(--c-wellome)"></span>Wellome</div>
     <div class="ap-row"><span class="ap-dot" style="background:var(--c-crcls)"></span>Crcls</div>
