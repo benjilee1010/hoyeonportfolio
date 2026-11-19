@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Hoyeon Lee</title>
-<meta name="description" content="Hoyeon Lee's portfolio — Cardboard Party, Ascade, Wellome, Crcls, Omma's Kitchen, and usePaletta." />
+<meta name="description" content="Hoyeon Lee's portfolio — Cardboard Party, Ascade, TerpTax, Wellome, Crcls, Omma's Kitchen, and usePaletta." />
 <meta name="color-scheme" content="light" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,6 +29,7 @@
     --c-ascade:   #33477a;
     --c-omma:     #c1712f;
     --c-cardboard:#a0703a;
+    --c-terptax:  #b4232a;
     --c-wellome:  #8b6fc9;
     --c-crcls:    #c15f7f;
     --c-paletta1: #e0668a;
@@ -345,6 +346,13 @@
   .cb-mode { flex: 1; border-radius: 14px; background: linear-gradient(160deg, #e4cda8, #d4b98f); border: 1px solid rgba(110,74,40,0.22); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.2rem; padding: 0.9rem 0.6rem; color: #6e4a28; }
   .cb-mode small { font-size: 0.58rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.7; }
   .cb-mode strong { font-family: var(--font-display); font-size: 1.05rem; font-weight: 600; }
+  .preview-terptax .preview-content { background: linear-gradient(155deg, #faf0ee, #f3dedb); flex-direction: row; align-items: stretch; gap: 0.7rem; padding: 1.1rem 1rem; }
+  .tt-fee { width: 112px; flex-shrink: 0; border-radius: 14px; background: var(--c-terptax); color: #fff; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.15rem; padding: 0.8rem 0.5rem; }
+  .tt-fee strong { font-family: var(--font-display); font-size: 1.9rem; font-weight: 600; line-height: 1; }
+  .tt-fee small { font-size: 0.58rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; opacity: 0.85; text-align: center; }
+  .tt-list { flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 0.5rem; }
+  .tt-row { display: flex; align-items: center; gap: 0.55rem; font-size: 0.74rem; font-weight: 600; color: #8f1d22; background: rgba(180,35,42,0.08); border: 1px solid rgba(180,35,42,0.14); border-radius: 10px; padding: 0.5rem 0.65rem; }
+  .tt-row::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--c-terptax); flex-shrink: 0; }
   .preview-ascade .preview-content { background: linear-gradient(155deg, #eef1f8, #e2e7f3); }
   .ascade-row { display: flex; align-items: center; gap: 0.55rem; }
   .ascade-check {
@@ -432,7 +440,9 @@
     .work { padding: 1rem 1.4rem 4rem; }
     .about { grid-template-columns: 1fr; padding: 1rem 1.4rem 5rem; gap: 2rem; }
     .preview-omma .preview-content,
+    .preview-terptax .preview-content,
     .preview-wellome .preview-content { flex-direction: column; }
+    .tt-fee { width: 100%; }
     .omma-cart { width: 100%; flex-direction: row; justify-content: center; gap: 0.4rem; padding: 0.5rem; }
   }
 </style>
@@ -464,12 +474,10 @@
 <section class="work" id="work">
   <div class="section-header">
     <p class="section-label">Selected projects</p>
-    <h2 class="section-title">Six projects.</h2>
+    <h2 class="section-title">Seven projects.</h2>
   </div>
 
   <div class="cards">
-
-    
 
     <a class="card" data-index="01" href="https://ascade.co/gov" target="_blank" rel="noopener">
       <div class="card-preview preview-ascade">
@@ -499,7 +507,36 @@
       <span class="card-cta">Open ascade.co/gov <span>&rarr;</span></span>
     </a>
 
-    <a class="card" data-index="02" href="https://wellome.vercel.app/" target="_blank" rel="noopener">
+    <a class="card" data-index="02" href="https://terptax.pages.dev" target="_blank" rel="noopener">
+      <div class="card-preview preview-terptax">
+        <div class="preview-bar">
+          <span class="preview-dot"></span><span class="preview-dot"></span><span class="preview-dot"></span>
+          <span class="preview-url">terptax.pages.dev</span>
+          <span class="preview-arrow">&#8599;</span>
+        </div>
+        <div class="preview-content">
+          <div class="tt-fee"><strong>$0</strong><small>Fee for eligible clients</small></div>
+          <div class="tt-list">
+            <div class="tt-row">IRS-certified volunteers</div>
+            <div class="tt-row">CPA supervision</div>
+          </div>
+        </div>
+      </div>
+      <div class="card-meta">
+        <span class="card-num">02</span>
+        <div class="swatch-key"><span style="background:var(--c-terptax)"></span></div>
+        <div class="tags"><span class="tag">Website</span><span class="tag">Nonprofit</span></div>
+      </div>
+      <h3 class="card-title">TerpTax</h3>
+      <p class="card-tagline">"A little help. A lot of relief."</p>
+      <p class="card-desc">
+        A redesigned landing page for TerpTax, a Maryland nonprofit that offers free tax
+        preparation to eligible students and community members in College Park.
+      </p>
+      <span class="card-cta">Open terptax.pages.dev <span>&rarr;</span></span>
+    </a>
+
+    <a class="card" data-index="03" href="https://wellome.vercel.app/" target="_blank" rel="noopener">
       <div class="card-preview preview-wellome">
         <div class="preview-bar">
           <span class="preview-dot"></span><span class="preview-dot"></span><span class="preview-dot"></span>
@@ -520,7 +557,7 @@
         </div>
       </div>
       <div class="card-meta">
-        <span class="card-num">02</span>
+        <span class="card-num">03</span>
         <div class="swatch-key"><span style="background:var(--c-wellome)"></span></div>
         <div class="tags"><span class="tag">Web App</span><span class="tag">Roommates</span></div>
       </div>
@@ -533,7 +570,7 @@
       <span class="card-cta">Open wellome.vercel.app <span>&rarr;</span></span>
     </a>
 
-    <a class="card" data-index="03" href="https://cardboardparty.onrender.com" target="_blank" rel="noopener">
+    <a class="card" data-index="04" href="https://cardboardparty.onrender.com" target="_blank" rel="noopener">
       <div class="card-preview preview-cardboard">
         <div class="preview-bar">
           <span class="preview-dot"></span><span class="preview-dot"></span><span class="preview-dot"></span>
@@ -545,7 +582,7 @@
         </div>
       </div>
       <div class="card-meta">
-        <span class="card-num">03</span>
+        <span class="card-num">04</span>
         <div class="swatch-key"><span style="background:var(--c-cardboard)"></span></div>
         <div class="tags"><span class="tag tag-wip">Beta</span><span class="tag">Game</span></div>
       </div>
@@ -558,7 +595,7 @@
       <span class="card-cta">Open cardboardparty.onrender.com <span>&rarr;</span></span>
     </a>
 
-    <a class="card" data-index="04" href="https://crcls.vercel.app/" target="_blank" rel="noopener">
+    <a class="card" data-index="05" href="https://crcls.vercel.app/" target="_blank" rel="noopener">
       <div class="card-preview preview-crcls">
         <div class="preview-bar">
           <span class="preview-dot"></span><span class="preview-dot"></span><span class="preview-dot"></span>
@@ -572,7 +609,7 @@
         </div>
       </div>
       <div class="card-meta">
-        <span class="card-num">04</span>
+        <span class="card-num">05</span>
         <div class="swatch-key"><span style="background:var(--c-crcls)"></span></div>
         <div class="tags"><span class="tag">Web App</span></div>
       </div>
@@ -585,7 +622,7 @@
       <span class="card-cta">Open crcls.vercel.app <span>&rarr;</span></span>
     </a>
 
-    <a class="card" data-index="05" href="https://ommaskitchen.vercel.app/" target="_blank" rel="noopener">
+    <a class="card" data-index="06" href="https://ommaskitchen.vercel.app/" target="_blank" rel="noopener">
       <div class="card-preview preview-omma">
         <div class="preview-bar">
           <span class="preview-dot"></span><span class="preview-dot"></span><span class="preview-dot"></span>
@@ -602,7 +639,7 @@
         </div>
       </div>
       <div class="card-meta">
-        <span class="card-num">05</span>
+        <span class="card-num">06</span>
         <div class="swatch-key"><span style="background:var(--c-omma)"></span></div>
         <div class="tags"><span class="tag">Web App</span><span class="tag">Demo</span></div>
       </div>
@@ -615,7 +652,7 @@
       <span class="card-cta">Open ommaskitchen.vercel.app <span>&rarr;</span></span>
     </a>
 
-    <a class="card" data-index="06" href="https://usepaletta.vercel.app/" target="_blank" rel="noopener">
+    <a class="card" data-index="07" href="https://usepaletta.vercel.app/" target="_blank" rel="noopener">
       <div class="card-preview preview-paletta">
         <div class="preview-bar">
           <span class="preview-dot"></span><span class="preview-dot"></span><span class="preview-dot"></span>
@@ -639,7 +676,7 @@
         </div>
       </div>
       <div class="card-meta">
-        <span class="card-num">06</span>
+        <span class="card-num">07</span>
         <div class="swatch-key">
           <span style="background:var(--c-paletta1)"></span>
           <span style="background:var(--c-paletta3)"></span>
@@ -667,12 +704,13 @@
       UVA with a background in UI/UX design, visual arts, and music.
     </p>
     <p class="about-body">
-      These six projects range from enterprise software to a game still in progress. The
+      These seven projects range from enterprise software to a game still in progress. The
       process is the same either way: design first, then build.
     </p>
   </div>
   <div class="about-palette">
     <div class="ap-row"><span class="ap-dot" style="background:var(--c-ascade)"></span>Ascade</div>
+    <div class="ap-row"><span class="ap-dot" style="background:var(--c-terptax)"></span>TerpTax</div>
     <div class="ap-row"><span class="ap-dot" style="background:var(--c-wellome)"></span>Wellome</div>
     <div class="ap-row"><span class="ap-dot" style="background:var(--c-cardboard)"></span>Cardboard Party</div>
     <div class="ap-row"><span class="ap-dot" style="background:var(--c-crcls)"></span>Crcls</div>
