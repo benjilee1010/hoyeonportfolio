@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>TerpTax | Hoyeon Lee</title>
+<meta name="description" content="The process behind a redesign of TerpTax, a nonprofit that offers free tax preparation in College Park, Maryland." />
+<meta name="color-scheme" content="light" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/styles.css?v=2" />
+</head>
+<body>
+
+<nav class="nav">
+  <a class="nav-mark" href="/">HL</a>
+  <ul class="nav-links">
+    <li><a href="/#work">Work</a></li>
+    <li><a href="/#about">About</a></li>
+    <li><a href="mailto:benjilee1010@gmail.com" class="nav-cta">Say hello</a></li>
+  </ul>
+</nav>
+
+<main class="case" style="--accent: var(--c-terptax)">
+  <div class="case-inner">
+    <a class="back" href="/#work">&larr; All work</a>
+    <p class="case-eyebrow">Website redesign &middot; Nonprofit</p>
+    <h1 class="case-title">TerpTax</h1>
+    <p class="case-lead">
+      A redesign of the website for a nonprofit that offers free tax preparation to eligible
+      students and community members in College Park, Maryland.
+    </p>
+
+    <dl class="meta">
+      <div><dt>Role</dt><dd>Everything on the website itself: design, layout, copy and code</dd></div>
+      <div><dt>Worked with</dt><dd>A friend, who handled the professor and the backend setup</dd></div>
+      <div><dt>Site</dt><dd><a href="https://terptax.pages.dev" target="_blank" rel="noopener">terptax.pages.dev</a></dd></div>
+    </dl>
+
+    <section class="step">
+      <p class="step-label">Starting point</p>
+      <h2>An early version, not yet designed around its visitors</h2>
+      <p>
+        I was handed an early version of the site that hadn't been through a UX pass, and I took
+        over everything about the website itself. My friend handled communication with the
+        professor who gave us the work, along with the backend setup: Cloudflare and the email
+        domain.
+      </p>
+      <p>
+        The page wasn't very user friendly or pleasant to look at, and it was inconsistent and
+        disorganized. The flow was the biggest problem. It led with how to book and what to do,
+        and only afterward explained what TerpTax can help with.
+      </p>
+    </section>
+
+    <section class="step">
+      <p class="step-label">Design decisions</p>
+      <h2>Make the site reflect what TerpTax is</h2>
+      <p>
+        I put a lot of weight on a site's design reflecting the message of the organization
+        behind it. TerpTax is a nonprofit that helps people through something stressful, and tax
+        filing is also a clinical task. The design had to feel both.
+      </p>
+      <ul class="points">
+        <li><strong>Order.</strong> The home page now opens with "What brings you here?", then covers what TerpTax can help with, how getting help works, and what to bring.</li>
+        <li><strong>Buttons.</strong> My first redesign used fully rounded pill buttons, which felt too bubbly for tax filing. I changed them to a small corner radius: exact enough for a clinical task, soft enough to feel friendly.</li>
+        <li><strong>Logo.</strong> The terrapin shell logo took several rounds: where it sits next to the name, its size, and how the T is centered inside the shell. I also tried a faint hex pattern in the background at a few opacities, then removed it.</li>
+        <li><strong>Plain language.</strong> A later pass made the site easier for older and less technical visitors, with plainer copy and fewer promises made on TerpTax's behalf.</li>
+      </ul>
+    </section>
+
+    <section class="step">
+      <p class="step-label">How it was built</p>
+      <h2>A small site with a few moving parts</h2>
+      <p>
+        The redesign began as a single HTML page and is hosted on Cloudflare Pages. Booking goes
+        through Calendly, for a consultation with the supervising CPA. I replaced the email
+        links with a contact form that keeps the address out of the page and cuts spam.
+      </p>
+      <p>
+        My friend built the intake system behind the form. I redesigned its private reviewer
+        pages to match the public site.
+      </p>
+    </section>
+
+    <section class="step">
+      <p class="step-label">What changed</p>
+      <h2>November, day by day</h2>
+      <ol class="timeline">
+        <li><time datetime="2026-11-13">Nov 13</time><span>My friend rebuilds the original page with an intake wizard and deploys it on Cloudflare.</span></li>
+        <li><time datetime="2026-11-14">Nov 14</time><span>I replace the homepage with my redesign.</span></li>
+        <li><time datetime="2026-11-17">Nov 17</time><span>Rounds on the logo and tab icon. The hex pattern is added, then removed.</span></li>
+        <li><time datetime="2026-11-18">Nov 18</time><span>Buttons move to a small corner radius. Reviewer pages are redesigned to match the site.</span></li>
+        <li><time datetime="2026-11-20">Nov 20</time><span>A plain-language pass, and a reorganized home page built around "What brings you here?"</span></li>
+      </ol>
+    </section>
+
+    <div class="case-end">
+      <a class="back" href="/#work">&larr; All work</a>
+      <a class="visit" href="https://terptax.pages.dev" target="_blank" rel="noopener">Visit terptax.pages.dev <span>&#8599;</span></a>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <p class="footer-name">Hoyeon Lee</p>
+  <p class="footer-copy"><a href="mailto:benjilee1010@gmail.com">benjilee1010@gmail.com</a></p>
+</footer>
+
+</body>
+</html>

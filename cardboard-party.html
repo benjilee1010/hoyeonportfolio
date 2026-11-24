@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Cardboard Party | Hoyeon Lee</title>
+<meta name="description" content="The process behind Cardboard Party, a free online party kart racer now in beta." />
+<meta name="color-scheme" content="light" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/styles.css?v=2" />
+</head>
+<body>
+
+<nav class="nav">
+  <a class="nav-mark" href="/">HL</a>
+  <ul class="nav-links">
+    <li><a href="/#work">Work</a></li>
+    <li><a href="/#about">About</a></li>
+    <li><a href="mailto:benjilee1010@gmail.com" class="nav-cta">Say hello</a></li>
+  </ul>
+</nav>
+
+<main class="case" style="--accent: var(--c-cardboard)">
+  <div class="case-inner">
+    <a class="back" href="/#work">&larr; All work</a>
+    <p class="case-eyebrow">Game &middot; Beta</p>
+    <h1 class="case-title">Cardboard Party</h1>
+    <p class="case-lead">
+      A free, online party kart racer for phones and computers, with drifting, boosts, a drawn
+      track editor and AI racers.
+    </p>
+
+    <dl class="meta">
+      <div><dt>Role</dt><dd>Design and development</dd></div>
+      <div><dt>Started</dt><dd>September 18, 2026</dd></div>
+      <div><dt>Status</dt><dd>Beta</dd></div>
+      <div><dt>Play</dt><dd><a href="https://cardboardparty.onrender.com" target="_blank" rel="noopener">cardboardparty.onrender.com</a></dd></div>
+    </dl>
+
+    <section class="step">
+      <p class="step-label">Why I built it</p>
+      <h2>It started as a different game</h2>
+      <p>
+        I'm a big fan of Marvel Rivals, and I wanted to make something similar: a hero arena game
+        that was more of a party game, with simple visuals so it could run well on almost any
+        system.
+      </p>
+      <p>
+        Partway through, balancing the characters turned out to be hard. I dropped it and went
+        back to an idea from high school: a party kart racer that works on phones and computers,
+        plays online, and is free. I wanted it to look consistent and feel well made.
+      </p>
+    </section>
+
+    <section class="step">
+      <p class="step-label">Design decisions</p>
+      <h2>Most of the work went into how it plays</h2>
+      <p>
+        The game is gameplay-first, so I spent most of my time on the experience of playing it
+        rather than on the screens around it. That meant the timing of the drift, how the karts
+        handle, the visual and sound effects, and how clearly the gameplay and the interface
+        read.
+      </p>
+      <p>
+        The menus stay simple on purpose. The goal was pick up and play, so I avoided complex,
+        detailed screens. I was aiming for more polish than projects like this usually have.
+      </p>
+    </section>
+
+    <section class="step">
+      <p class="step-label">How it was built</p>
+      <h2>A browser game with a server for online races</h2>
+      <p>
+        The game runs in the browser with three.js, and a Node server using WebSockets handles
+        online races. There is also a desktop build made with Electron, and the live version is
+        hosted on Render.
+      </p>
+      <p>
+        Karts charge drifts through blue, purple and rainbow stages, and races have items and
+        bots. Tracks come from a drawn track editor, and there are themed maps including forest,
+        cavern, candy land and space. Players meet in a party lobby and ready up before a race.
+      </p>
+    </section>
+
+    <section class="step">
+      <p class="step-label">What changed</p>
+      <h2>From a laser shooter to a kart racer</h2>
+      <ol class="timeline">
+        <li><time datetime="2026-09-18">Sep 18</time><span>Started as Cardboard, a browser laser shooter.</span></li>
+        <li><time datetime="2026-09-19">Sep 19</time><span>Added a 10-player free-for-all arena and character classes.</span></li>
+        <li><time datetime="2026-10-08">Oct 8</time><span>First playable kart racing build, with drifting boosts, AI racers and a drawn track editor.</span></li>
+        <li><time datetime="2026-10-17">Oct 17</time><span>Party lobby with ready-up for online races.</span></li>
+        <li><time datetime="2026-10-27">Late Oct</time><span>More maps, items and smarter bots.</span></li>
+        <li><time>Now</time><span>In beta. The shooter is no longer part of the game, and its code is kept in an archive branch.</span></li>
+      </ol>
+    </section>
+
+    <div class="case-end">
+      <a class="back" href="/#work">&larr; All work</a>
+      <a class="visit" href="https://cardboardparty.onrender.com" target="_blank" rel="noopener">Play Cardboard Party <span>&#8599;</span></a>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <p class="footer-name">Hoyeon Lee</p>
+  <p class="footer-copy"><a href="mailto:benjilee1010@gmail.com">benjilee1010@gmail.com</a></p>
+</footer>
+
+</body>
+</html>
