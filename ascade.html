@@ -9,9 +9,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,500&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="/styles.css?v=2" />
+<link rel="stylesheet" href="/styles.css?v=3" />
 </head>
-<body>
+<body class="theme-ascade">
+<div class="progress" aria-hidden="true"><span></span></div>
 
 <nav class="nav">
   <a class="nav-mark" href="/">HL</a>
@@ -22,8 +23,16 @@
   </ul>
 </nav>
 
-<main class="case" style="--accent: var(--c-ascade)">
-  <div class="case-inner">
+<main class="case">
+  <aside class="rail" aria-label="On this page">
+    <p class="rail-title">On this page</p>
+    <ol>
+        <li><a class="rail-link" href="#s1"><span class="rail-num">1</span>Context</a></li>
+        <li><a class="rail-link" href="#s2"><span class="rail-num">2</span>How I worked</a></li>
+        <li><a class="rail-link" href="#s3"><span class="rail-num">3</span>Design decisions</a></li>
+    </ol>
+  </aside>
+  <div class="case-main">
     <a class="back" href="/#work">&larr; All work</a>
     <p class="case-eyebrow">Design consulting &middot; GovTech</p>
     <h1 class="case-title">Ascade</h1>
@@ -38,8 +47,8 @@
       <div><dt>Page</dt><dd><a href="https://ascade.co/gov" target="_blank" rel="noopener">ascade.co/gov</a></dd></div>
     </dl>
 
-    <section class="step">
-      <p class="step-label">Context</p>
+    <section class="step" id="s1">
+      <div class="step-head"><span class="step-num">1</span><p class="step-label">Context</p></div>
       <h2>What the page is for</h2>
       <p>
         The page introduces Ascade's secure enclaves to government teams and defense
@@ -52,8 +61,8 @@
       </p>
     </section>
 
-    <section class="step">
-      <p class="step-label">How I worked</p>
+    <section class="step" id="s2">
+      <div class="step-head"><span class="step-num">2</span><p class="step-label">How I worked</p></div>
       <h2>Talking it through, then drawing it</h2>
       <p>
         I walked the founder through the pages on a call and explained what I would change and
@@ -62,8 +71,8 @@
       </p>
     </section>
 
-    <section class="step">
-      <p class="step-label">Design decisions</p>
+    <section class="step" id="s3">
+      <div class="step-head"><span class="step-num">3</span><p class="step-label">Design decisions</p></div>
       <h2>The design should match the product</h2>
       <p>
         The principle is the one I used on TerpTax: a site should reflect what the company is.
@@ -78,8 +87,13 @@
     </section>
 
     <div class="case-end">
-      <a class="back" href="/#work">&larr; All work</a>
       <a class="visit" href="https://ascade.co/gov" target="_blank" rel="noopener">Visit ascade.co/gov <span>&#8599;</span></a>
+      <a class="next" href="/terptax" style="--n-from:#faf0ee;--n-to:#f3dedb;--n-ink:#8f1d22;--n-line:rgba(180,35,42,0.22)">
+        <span class="next-label">Next project</span>
+        <span class="next-title">TerpTax</span>
+        <span class="next-sub">Website redesign · Nonprofit</span>
+        <span class="next-arrow" aria-hidden="true">&rarr;</span>
+      </a>
     </div>
   </div>
 </main>
@@ -89,5 +103,6 @@
   <p class="footer-copy"><a href="mailto:benjilee1010@gmail.com">benjilee1010@gmail.com</a></p>
 </footer>
 
+<script src="/case.js?v=1"></script>
 </body>
 </html>

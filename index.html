@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,500&display=swap" rel="stylesheet" />
 
-<link rel="stylesheet" href="/styles.css?v=2" />
+<link rel="stylesheet" href="/styles.css?v=3" />
 </head>
 <body>
 
@@ -49,7 +49,7 @@
       <p class="group-note">Three projects, and how they came together.</p>
     </div>
 
-    <a class="card" data-index="01" href="/ascade">
+    <a class="card feature" data-index="01" href="/ascade" style="--accent-ink:#26365e">
       <div class="card-preview preview-ascade">
         <div class="preview-bar">
           <span class="preview-dot"></span><span class="preview-dot"></span><span class="preview-dot"></span>
@@ -72,7 +72,7 @@
       <span class="card-cta">Read the process <span>&rarr;</span></span>
     </a>
 
-    <a class="card" data-index="02" href="/terptax">
+    <a class="card feature" data-index="02" href="/terptax" style="--accent-ink:#8f1d22">
       <div class="card-preview preview-terptax">
         <div class="preview-bar">
           <span class="preview-dot"></span><span class="preview-dot"></span><span class="preview-dot"></span>
@@ -99,7 +99,7 @@
       <span class="card-cta">Read the process <span>&rarr;</span></span>
     </a>
 
-    <a class="card" data-index="03" href="/cardboard-party">
+    <a class="card feature" data-index="03" href="/cardboard-party" style="--accent-ink:#6e4a28">
       <div class="card-preview preview-cardboard">
         <div class="preview-bar">
           <span class="preview-dot"></span><span class="preview-dot"></span><span class="preview-dot"></span>
@@ -122,141 +122,144 @@
       <span class="card-cta">Read the process <span>&rarr;</span></span>
     </a>
 
-    <div class="group-head later">
+    <div class="group-head later" id="more">
       <h3 class="group-title">More projects</h3>
       <p class="group-note">These link straight to the live sites.</p>
     </div>
 
-    <a class="card" data-index="04" href="https://wellome.vercel.app/" target="_blank" rel="noopener">
-      <div class="card-preview preview-wellome">
-        <div class="preview-bar">
-          <span class="preview-dot"></span><span class="preview-dot"></span><span class="preview-dot"></span>
-          <span class="preview-url">wellome.vercel.app</span>
-          <span class="preview-arrow">&#8599;</span>
-        </div>
-        <div class="preview-content">
-          <div class="wl-card">
-            <span class="wl-label">Chores done</span>
-            <span class="wl-num">12</span>
-            <div class="wl-bar"><div class="wl-bar-fill"></div></div>
+    <div class="more-grid">
+  
+      <a class="card" data-index="04" href="https://wellome.vercel.app/" target="_blank" rel="noopener">
+        <div class="card-preview preview-wellome">
+          <div class="preview-bar">
+            <span class="preview-dot"></span><span class="preview-dot"></span><span class="preview-dot"></span>
+            <span class="preview-url">wellome.vercel.app</span>
+            <span class="preview-arrow">&#8599;</span>
           </div>
-          <div class="wl-card">
-            <span class="wl-label">Rent split</span>
-            <span class="wl-num">3 way</span>
-            <div class="wl-bar"><div class="wl-bar-fill" style="width:45%"></div></div>
+          <div class="preview-content">
+            <div class="wl-card">
+              <span class="wl-label">Chores done</span>
+              <span class="wl-num">12</span>
+              <div class="wl-bar"><div class="wl-bar-fill"></div></div>
+            </div>
+            <div class="wl-card">
+              <span class="wl-label">Rent split</span>
+              <span class="wl-num">3 way</span>
+              <div class="wl-bar"><div class="wl-bar-fill" style="width:45%"></div></div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="card-meta">
-        <span class="card-num">04</span>
-        <div class="swatch-key"><span style="background:var(--c-wellome)"></span></div>
-        <div class="tags"><span class="tag">Web App</span><span class="tag">Roommates</span></div>
-      </div>
-      <h3 class="card-title">Wellome</h3>
-      <p class="card-tagline">"Roommate life, organised."</p>
-      <p class="card-desc">
-        Wellome gives roommates one shared place to track chores, bills, and day-to-day house
-        logistics.
-      </p>
-      <span class="card-cta">Open wellome.vercel.app <span>&rarr;</span></span>
-    </a>
-
-    <a class="card" data-index="05" href="https://crcls.vercel.app/" target="_blank" rel="noopener">
-      <div class="card-preview preview-crcls">
-        <div class="preview-bar">
-          <span class="preview-dot"></span><span class="preview-dot"></span><span class="preview-dot"></span>
-          <span class="preview-url">crcls.vercel.app</span>
-          <span class="preview-arrow">&#8599;</span>
+        <div class="card-meta">
+          <span class="card-num">04</span>
+          <div class="swatch-key"><span style="background:var(--c-wellome)"></span></div>
+          <div class="tags"><span class="tag">Web App</span><span class="tag">Roommates</span></div>
         </div>
-        <div class="preview-content">
-          <div class="cr-row"><div class="cr-avatar"></div><span class="cr-name">Mom</span><span class="cr-chip">3 days ago</span></div>
-          <div class="cr-row"><div class="cr-avatar" style="opacity:.6"></div><span class="cr-name">Sam</span><span class="cr-chip">check in soon</span></div>
-          <div class="cr-row"><div class="cr-avatar" style="opacity:.4"></div><span class="cr-name">Grandpa</span><span class="cr-chip">2 weeks ago</span></div>
-        </div>
-      </div>
-      <div class="card-meta">
-        <span class="card-num">05</span>
-        <div class="swatch-key"><span style="background:var(--c-crcls)"></span></div>
-        <div class="tags"><span class="tag">Web App</span></div>
-      </div>
-      <h3 class="card-title">Crcls</h3>
-      <p class="card-tagline">"Stay close to the people who matter."</p>
-      <p class="card-desc">
-        Crcls tracks when you last checked in with someone and reminds you before too much time
-        passes.
-      </p>
-      <span class="card-cta">Open crcls.vercel.app <span>&rarr;</span></span>
-    </a>
-
-    <a class="card" data-index="06" href="https://ommaskitchen.vercel.app/" target="_blank" rel="noopener">
-      <div class="card-preview preview-omma">
-        <div class="preview-bar">
-          <span class="preview-dot"></span><span class="preview-dot"></span><span class="preview-dot"></span>
-          <span class="preview-url">ommaskitchen.vercel.app</span>
-          <span class="preview-arrow">&#8599;</span>
-        </div>
-        <div class="preview-content">
-          <div class="omma-menu">
-            <div class="omma-item"></div>
-            <div class="omma-item"></div>
-            <div class="omma-item"></div>
+        <h3 class="card-title">Wellome</h3>
+        <p class="card-tagline">"Roommate life, organised."</p>
+        <p class="card-desc">
+          Wellome gives roommates one shared place to track chores, bills, and day-to-day house
+          logistics.
+        </p>
+        <span class="card-cta">Open wellome.vercel.app <span>&rarr;</span></span>
+      </a>
+  
+      <a class="card" data-index="05" href="https://crcls.vercel.app/" target="_blank" rel="noopener">
+        <div class="card-preview preview-crcls">
+          <div class="preview-bar">
+            <span class="preview-dot"></span><span class="preview-dot"></span><span class="preview-dot"></span>
+            <span class="preview-url">crcls.vercel.app</span>
+            <span class="preview-arrow">&#8599;</span>
           </div>
-          <div class="omma-cart"><span>Cart</span><span>3 items</span></div>
-        </div>
-      </div>
-      <div class="card-meta">
-        <span class="card-num">06</span>
-        <div class="swatch-key"><span style="background:var(--c-omma)"></span></div>
-        <div class="tags"><span class="tag">Web App</span><span class="tag">Demo</span></div>
-      </div>
-      <h3 class="card-title">Omma's Kitchen</h3>
-      <p class="card-tagline">A concept ordering site for a Korean restaurant.</p>
-      <p class="card-desc">
-        Browse the menu, build a cart, and check out — a self-directed demo, not a real
-        restaurant's live product.
-      </p>
-      <span class="card-cta">Open ommaskitchen.vercel.app <span>&rarr;</span></span>
-    </a>
-
-    <a class="card" data-index="07" href="https://usepaletta.vercel.app/" target="_blank" rel="noopener">
-      <div class="card-preview preview-paletta">
-        <div class="preview-bar">
-          <span class="preview-dot"></span><span class="preview-dot"></span><span class="preview-dot"></span>
-          <span class="preview-url">usepaletta.vercel.app</span>
-          <span class="preview-arrow">&#8599;</span>
-        </div>
-        <div class="preview-content">
-          <div class="pal-chips">
-            <span class="pal-chip active">dusk</span>
-            <span class="pal-chip active">coastal</span>
-            <span class="pal-chip">citrus</span>
-            <span class="pal-chip">moody</span>
+          <div class="preview-content">
+            <div class="cr-row"><div class="cr-avatar"></div><span class="cr-name">Mom</span><span class="cr-chip">3 days ago</span></div>
+            <div class="cr-row"><div class="cr-avatar" style="opacity:.6"></div><span class="cr-name">Sam</span><span class="cr-chip">check in soon</span></div>
+            <div class="cr-row"><div class="cr-avatar" style="opacity:.4"></div><span class="cr-name">Grandpa</span><span class="cr-chip">2 weeks ago</span></div>
           </div>
-          <div class="pal-swatches">
+        </div>
+        <div class="card-meta">
+          <span class="card-num">05</span>
+          <div class="swatch-key"><span style="background:var(--c-crcls)"></span></div>
+          <div class="tags"><span class="tag">Web App</span></div>
+        </div>
+        <h3 class="card-title">Crcls</h3>
+        <p class="card-tagline">"Stay close to the people who matter."</p>
+        <p class="card-desc">
+          Crcls tracks when you last checked in with someone and reminds you before too much time
+          passes.
+        </p>
+        <span class="card-cta">Open crcls.vercel.app <span>&rarr;</span></span>
+      </a>
+  
+      <a class="card" data-index="06" href="https://ommaskitchen.vercel.app/" target="_blank" rel="noopener">
+        <div class="card-preview preview-omma">
+          <div class="preview-bar">
+            <span class="preview-dot"></span><span class="preview-dot"></span><span class="preview-dot"></span>
+            <span class="preview-url">ommaskitchen.vercel.app</span>
+            <span class="preview-arrow">&#8599;</span>
+          </div>
+          <div class="preview-content">
+            <div class="omma-menu">
+              <div class="omma-item"></div>
+              <div class="omma-item"></div>
+              <div class="omma-item"></div>
+            </div>
+            <div class="omma-cart"><span>Cart</span><span>3 items</span></div>
+          </div>
+        </div>
+        <div class="card-meta">
+          <span class="card-num">06</span>
+          <div class="swatch-key"><span style="background:var(--c-omma)"></span></div>
+          <div class="tags"><span class="tag">Web App</span><span class="tag">Demo</span></div>
+        </div>
+        <h3 class="card-title">Omma's Kitchen</h3>
+        <p class="card-tagline">A concept ordering site for a Korean restaurant.</p>
+        <p class="card-desc">
+          Browse the menu, build a cart, and check out — a self-directed demo, not a real
+          restaurant's live product.
+        </p>
+        <span class="card-cta">Open ommaskitchen.vercel.app <span>&rarr;</span></span>
+      </a>
+  
+      <a class="card" data-index="07" href="https://usepaletta.vercel.app/" target="_blank" rel="noopener">
+        <div class="card-preview preview-paletta">
+          <div class="preview-bar">
+            <span class="preview-dot"></span><span class="preview-dot"></span><span class="preview-dot"></span>
+            <span class="preview-url">usepaletta.vercel.app</span>
+            <span class="preview-arrow">&#8599;</span>
+          </div>
+          <div class="preview-content">
+            <div class="pal-chips">
+              <span class="pal-chip active">dusk</span>
+              <span class="pal-chip active">coastal</span>
+              <span class="pal-chip">citrus</span>
+              <span class="pal-chip">moody</span>
+            </div>
+            <div class="pal-swatches">
+              <span style="background:var(--c-paletta1)"></span>
+              <span style="background:var(--c-paletta2)"></span>
+              <span style="background:var(--c-paletta3)"></span>
+              <span style="background:var(--c-paletta4)"></span>
+              <span style="background:var(--c-paletta5)"></span>
+            </div>
+          </div>
+        </div>
+        <div class="card-meta">
+          <span class="card-num">07</span>
+          <div class="swatch-key">
             <span style="background:var(--c-paletta1)"></span>
-            <span style="background:var(--c-paletta2)"></span>
             <span style="background:var(--c-paletta3)"></span>
             <span style="background:var(--c-paletta4)"></span>
-            <span style="background:var(--c-paletta5)"></span>
           </div>
+          <div class="tags"><span class="tag">Web App</span></div>
         </div>
-      </div>
-      <div class="card-meta">
-        <span class="card-num">07</span>
-        <div class="swatch-key">
-          <span style="background:var(--c-paletta1)"></span>
-          <span style="background:var(--c-paletta3)"></span>
-          <span style="background:var(--c-paletta4)"></span>
-        </div>
-        <div class="tags"><span class="tag">Web App</span></div>
-      </div>
-      <h3 class="card-title">usePaletta</h3>
-      <p class="card-tagline">A color palette generator driven by keywords.</p>
-      <p class="card-desc">
-        Combine mood words to generate a color palette, without picking hex codes by hand.
-      </p>
-      <span class="card-cta">Open usepaletta.vercel.app <span>&rarr;</span></span>
-    </a>
+        <h3 class="card-title">usePaletta</h3>
+        <p class="card-tagline">A color palette generator driven by keywords.</p>
+        <p class="card-desc">
+          Combine mood words to generate a color palette, without picking hex codes by hand.
+        </p>
+        <span class="card-cta">Open usepaletta.vercel.app <span>&rarr;</span></span>
+      </a>
+    </div>
 
   </div>
 </section>

@@ -9,9 +9,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,500&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="/styles.css?v=2" />
+<link rel="stylesheet" href="/styles.css?v=3" />
 </head>
-<body>
+<body class="theme-terptax">
+<div class="progress" aria-hidden="true"><span></span></div>
 
 <nav class="nav">
   <a class="nav-mark" href="/">HL</a>
@@ -22,8 +23,17 @@
   </ul>
 </nav>
 
-<main class="case" style="--accent: var(--c-terptax)">
-  <div class="case-inner">
+<main class="case">
+  <aside class="rail" aria-label="On this page">
+    <p class="rail-title">On this page</p>
+    <ol>
+        <li><a class="rail-link" href="#s1"><span class="rail-num">1</span>Starting point</a></li>
+        <li><a class="rail-link" href="#s2"><span class="rail-num">2</span>Design decisions</a></li>
+        <li><a class="rail-link" href="#s3"><span class="rail-num">3</span>How it was built</a></li>
+        <li><a class="rail-link" href="#s4"><span class="rail-num">4</span>What changed</a></li>
+    </ol>
+  </aside>
+  <div class="case-main">
     <a class="back" href="/#work">&larr; All work</a>
     <p class="case-eyebrow">Website redesign &middot; Nonprofit</p>
     <h1 class="case-title">TerpTax</h1>
@@ -38,8 +48,8 @@
       <div><dt>Site</dt><dd><a href="https://terptax.pages.dev" target="_blank" rel="noopener">terptax.pages.dev</a></dd></div>
     </dl>
 
-    <section class="step">
-      <p class="step-label">Starting point</p>
+    <section class="step" id="s1">
+      <div class="step-head"><span class="step-num">1</span><p class="step-label">Starting point</p></div>
       <h2>An early version, not yet designed around its visitors</h2>
       <p>
         I was handed an early version of the site that hadn't been through a UX pass, and I took
@@ -54,8 +64,8 @@
       </p>
     </section>
 
-    <section class="step">
-      <p class="step-label">Design decisions</p>
+    <section class="step" id="s2">
+      <div class="step-head"><span class="step-num">2</span><p class="step-label">Design decisions</p></div>
       <h2>Make the site reflect what TerpTax is</h2>
       <p>
         I put a lot of weight on a site's design reflecting the message of the organization
@@ -70,8 +80,8 @@
       </ul>
     </section>
 
-    <section class="step">
-      <p class="step-label">How it was built</p>
+    <section class="step" id="s3">
+      <div class="step-head"><span class="step-num">3</span><p class="step-label">How it was built</p></div>
       <h2>A small site with a few moving parts</h2>
       <p>
         The redesign began as a single HTML page and is hosted on Cloudflare Pages. Booking goes
@@ -84,8 +94,8 @@
       </p>
     </section>
 
-    <section class="step">
-      <p class="step-label">What changed</p>
+    <section class="step" id="s4">
+      <div class="step-head"><span class="step-num">4</span><p class="step-label">What changed</p></div>
       <h2>November, day by day</h2>
       <ol class="timeline">
         <li><time datetime="2026-11-13">Nov 13</time><span>My friend rebuilds the original page with an intake wizard and deploys it on Cloudflare.</span></li>
@@ -97,8 +107,13 @@
     </section>
 
     <div class="case-end">
-      <a class="back" href="/#work">&larr; All work</a>
       <a class="visit" href="https://terptax.pages.dev" target="_blank" rel="noopener">Visit terptax.pages.dev <span>&#8599;</span></a>
+      <a class="next" href="/cardboard-party" style="--n-from:#f6ead7;--n-to:#ecd5b0;--n-ink:#6e4a28;--n-line:rgba(160,112,58,0.3)">
+        <span class="next-label">Next project</span>
+        <span class="next-title">Cardboard Party</span>
+        <span class="next-sub">Game · Beta</span>
+        <span class="next-arrow" aria-hidden="true">&rarr;</span>
+      </a>
     </div>
   </div>
 </main>
@@ -108,5 +123,6 @@
   <p class="footer-copy"><a href="mailto:benjilee1010@gmail.com">benjilee1010@gmail.com</a></p>
 </footer>
 
+<script src="/case.js?v=1"></script>
 </body>
 </html>

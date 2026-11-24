@@ -9,9 +9,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,500&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="/styles.css?v=2" />
+<link rel="stylesheet" href="/styles.css?v=3" />
 </head>
-<body>
+<body class="theme-cardboard">
+<div class="progress" aria-hidden="true"><span></span></div>
 
 <nav class="nav">
   <a class="nav-mark" href="/">HL</a>
@@ -22,8 +23,17 @@
   </ul>
 </nav>
 
-<main class="case" style="--accent: var(--c-cardboard)">
-  <div class="case-inner">
+<main class="case">
+  <aside class="rail" aria-label="On this page">
+    <p class="rail-title">On this page</p>
+    <ol>
+        <li><a class="rail-link" href="#s1"><span class="rail-num">1</span>Why I built it</a></li>
+        <li><a class="rail-link" href="#s2"><span class="rail-num">2</span>Design decisions</a></li>
+        <li><a class="rail-link" href="#s3"><span class="rail-num">3</span>How it was built</a></li>
+        <li><a class="rail-link" href="#s4"><span class="rail-num">4</span>What changed</a></li>
+    </ol>
+  </aside>
+  <div class="case-main">
     <a class="back" href="/#work">&larr; All work</a>
     <p class="case-eyebrow">Game &middot; Beta</p>
     <h1 class="case-title">Cardboard Party</h1>
@@ -39,8 +49,8 @@
       <div><dt>Play</dt><dd><a href="https://cardboardparty.onrender.com" target="_blank" rel="noopener">cardboardparty.onrender.com</a></dd></div>
     </dl>
 
-    <section class="step">
-      <p class="step-label">Why I built it</p>
+    <section class="step" id="s1">
+      <div class="step-head"><span class="step-num">1</span><p class="step-label">Why I built it</p></div>
       <h2>It started as a different game</h2>
       <p>
         I'm a big fan of Marvel Rivals, and I wanted to make something similar: a hero arena game
@@ -54,8 +64,8 @@
       </p>
     </section>
 
-    <section class="step">
-      <p class="step-label">Design decisions</p>
+    <section class="step" id="s2">
+      <div class="step-head"><span class="step-num">2</span><p class="step-label">Design decisions</p></div>
       <h2>Most of the work went into how it plays</h2>
       <p>
         The game is gameplay-first, so I spent most of my time on the experience of playing it
@@ -69,8 +79,8 @@
       </p>
     </section>
 
-    <section class="step">
-      <p class="step-label">How it was built</p>
+    <section class="step" id="s3">
+      <div class="step-head"><span class="step-num">3</span><p class="step-label">How it was built</p></div>
       <h2>A browser game with a server for online races</h2>
       <p>
         The game runs in the browser with three.js, and a Node server using WebSockets handles
@@ -84,8 +94,8 @@
       </p>
     </section>
 
-    <section class="step">
-      <p class="step-label">What changed</p>
+    <section class="step" id="s4">
+      <div class="step-head"><span class="step-num">4</span><p class="step-label">What changed</p></div>
       <h2>From a laser shooter to a kart racer</h2>
       <ol class="timeline">
         <li><time datetime="2026-09-18">Sep 18</time><span>Started as Cardboard, a browser laser shooter.</span></li>
@@ -98,8 +108,13 @@
     </section>
 
     <div class="case-end">
-      <a class="back" href="/#work">&larr; All work</a>
       <a class="visit" href="https://cardboardparty.onrender.com" target="_blank" rel="noopener">Play Cardboard Party <span>&#8599;</span></a>
+      <a class="next" href="/#more" style="--n-from:#eef1f8;--n-to:#dde3f2;--n-ink:#26365e;--n-line:rgba(51,71,122,0.22)">
+        <span class="next-label">Keep looking</span>
+        <span class="next-title">More projects</span>
+        <span class="next-sub">Wellome, Crcls, Omma’s Kitchen and usePaletta</span>
+        <span class="next-arrow" aria-hidden="true">&rarr;</span>
+      </a>
     </div>
   </div>
 </main>
@@ -109,5 +124,6 @@
   <p class="footer-copy"><a href="mailto:benjilee1010@gmail.com">benjilee1010@gmail.com</a></p>
 </footer>
 
+<script src="/case.js?v=1"></script>
 </body>
 </html>
